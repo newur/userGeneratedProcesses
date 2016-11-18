@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>User Generated Processes</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Bootstrap -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main_container">
+
+	<div id="head">
+		<h2>Welcome to the Heart</h2>
+		<h2>of User Generated Processes </h2>
+	</div>
+
+	<div id="content">
+
+		<div id="process">
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Vorgang</span>
+				<input id="processName" type="text" class="form-control" placeholder="z.B. Bewerbung"
+						 aria-describedby="basic-addon1">
+			</div>
+		</div>
+
+		<hr/>
+
+		<button id="addFieldBtn" type="button" class="btn btn-info">Anfragefeld hinzufügen</button>
+
+		<br/><br/>
+
+		<div id="fields">
+
+		</div>
+
+		<br/>
+
+		<div id="requestFromContainer">
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Anfordern von</span>
+				<input id="requestFrom" type="text" class="form-control" placeholder="Name, Gruppe, Abteilung etc."
+						 aria-describedby="basic-addon1">
+			</div>
+		</div>
+
+		<hr/>
+
+		<div style="margin-bottom: 0px;">
+			<button id="addProvideFieldBtn" type="button" class="btn btn-info right">Angebotsfeld hinzufügen</button>
+			<div style="clear: both;"></div>
+		</div>
+
+		<div id="provideFields">
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Feldname</span>
+				<input id="provideField-0" type="text" class="form-control" placeholder="z.B. Einschätzung"
+						 aria-describedby="basic-addon1">
+
+				<div class="input-group-btn">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+							  aria-haspopup="true" aria-expanded="false">Feldtyp <span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#">Text</a></li>
+						<li><a href="#">Datum</a></li>
+						<li><a href="#">Ganzzahl</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Datei (PDF, Bild etc.)</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div id="provideTo">
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Anbieten an</span>
+				<input id="provideToInput" type="text" class="form-control" placeholder="Name, Gruppe, Abteilung etc."
+						 aria-describedby="basic-addon1">
+			</div>
+		</div>
+
+
+		<hr/>
+
+		<br/><br/>
+
+		<button id="requestBtnSubmit" type="button" class="btn btn-primary">Vorgang erstellen</button>
+
+	</div>
+
+
+</div>
+
+
+<script src="js/jquery/jquery-1.12.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script src="js/utils.js"></script>
+<script src="js/guiBuilder.js"></script>
+<script src="js/model.js"></script>
+<script src="js/objectBuilder.js"></script>
+<script src="js/ajaxRequest.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

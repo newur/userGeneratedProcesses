@@ -1,0 +1,16 @@
+appName: UserGeneratedProcesses
+server:
+    port: 8082
+spring:
+    datasource:
+        driverClassName: org.h2.Driver
+        username: ugp
+        password: ugp
+        url: jdbc:h2:~/ugp
+    jpa:
+        database-platform:  org.hibernate.dialect.H2Dialect
+        hibernate:
+            ejb:
+                naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+            hbm2ddl:
+                auto: update

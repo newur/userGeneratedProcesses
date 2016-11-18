@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>User Generated Processes</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Bootstrap -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main_container">
+
+	<div id="head">
+		<h2>Sie haben eine neue Anfrage</h2>
+	</div>
+
+	<div id="content">
+
+		<div id="process">
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Vorgang</span>
+				<input id="processName" type="text" class="form-control" placeholder="z.B. Bewerbung"
+						 aria-describedby="basic-addon1">
+			</div>
+		</div>
+
+		<br/>
+
+		<form id="receiveForm" class="form-horizontal">
+
+		</form>
+
+
+		<hr/>
+
+		<div id="process">
+
+			<div style="margin-bottom: 0px;">
+				<button id="addFieldBtn" type="button" class="btn btn-info right">Anfragefeld hinzufügen</button>
+				<div style="clear: both;"></div>
+			</div>
+			<br/>
+
+			<div id="fields">
+
+			</div>
+		</div>
+
+		<hr/>
+
+		<div id="requestFromContainer">
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">Weitergeben an</span>
+				<input id="requestFrom" type="text" class="form-control" placeholder="Name, Gruppe, Abteilung etc."
+						 aria-describedby="basic-addon1">
+			</div>
+		</div>
+		
+		<br/><br/>
+		
+		<div style="margin-bottom: 0px;">
+				<button id="completReceiveRequest" type="button" class="btn btn-primary">Anfrage abschließen</button>
+				<div style="clear: both;"></div>
+			</div>
+			<br/>
+
+	</div>
+
+
+	<script src="js/jquery/jquery-1.12.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="js/utils.js"></script>
+	<script src="js/guiBuilder.js"></script>
+	<script src="js/model.js"></script>
+	<script src="js/objectBuilder.js"></script>
+	<script src="js/ajaxRequest.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/receiveRequest.js"></script>
+</body>
+</html>

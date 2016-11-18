@@ -1,0 +1,51 @@
+#head h2 {
+	text-align: center;
+	margin: auto;
+}
+
+#head {
+	margin-bottom: 60px;
+}
+
+#main_container {
+	width: 900px;
+	margin: auto;
+}
+
+#content .input-group {
+	margin-bottom: 10px;
+}
+
+#content .input-group-addon {
+	min-width: 140px;
+	text-align: left;
+}
+
+#content .dropdown-toggle {
+	min-width: 203px;
+}
+
+#content .large, #content #receiveForm .dropdown-menu {
+	min-width: 477px;
+}
+
+.right {
+	float: right;
+	min-width: 203px;
+}
+
+#provideTo, #provideFields {
+	display: none;
+	margin-top: 20px;
+}
+
+html body {
+	background-color: #f7f7f9;
+}
+
+#main_container {
+	background-color: #fff;
+	height: 100vh;
+	padding: 30px;
+	box-shadow: 3px 0px 8px grey, -3px 0px 8px grey;
+}
